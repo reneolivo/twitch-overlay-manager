@@ -1,0 +1,17 @@
+.reward__ask-chad-bot-for-a-joke {
+  max-width: 400px;
+}
+
+.reward__ask-chad-bot-for-a-joke > * {
+  float: left;
+}
+
+.reward__ask-chad-bot-for-a-joke > .avatar {
+  width: 112px;
+}
+
+.reward__ask-chad-bot-for-a-joke > .joke {
+  padding-top: 20px;
+  margin-left: 20px;
+  width: calc(100% - 112px - 30px);
+}

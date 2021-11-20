@@ -1,0 +1,30 @@
+
+.reward__honor-the-dead {
+  background: url('/overlays/honor-the-dead/assets/fog.png') no-repeat 140px 0;
+  min-height: 200px;
+  padding-top: 30px;
+}
+
+.rewards__tomb {
+  float: left;
+  max-width: 150px;
+}
+
+.reward__user-details {
+  padding-top: 2em;
+}
+
+.reward__user-details img {
+  float: left;
+  max-width: 80px;
+  margin-right: 1em;
+}
+
+.reward__user-details h1,
+.reward__user-details p {
+  margin: 0;
+}
+
+.reward__user-details h1 {
+  padding-top: 10px;
+}

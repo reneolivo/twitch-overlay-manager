@@ -1,0 +1,5 @@
+{
+  "handler": "AskChadBotForAJokeRewardHandler",
+  "name": "Ask Chad Bot for a joke",
+  "type": "reward"
+}
