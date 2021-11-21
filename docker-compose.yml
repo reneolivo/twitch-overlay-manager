@@ -1,0 +1,12 @@
+version: '3'
+services:
+  node:
+    image: node:15.12
+    command: ./start.sh
+    working_dir: /usr/src/app
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+      - "4000:4000"
+    volumes:
+      - ./:/usr/src/app
