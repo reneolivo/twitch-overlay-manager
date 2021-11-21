@@ -6,6 +6,10 @@ This app displays custom overlays when Twitch events are triggered.
 It can be useful to create your own overlay animations when viewers
 subscribe, follow, request a reward, etc.
 
+
+https://user-images.githubusercontent.com/1642119/142749719-6340bd86-e9c1-49ac-be7f-5c3dbd1d68d5.mp4
+
+
 ## Setup
 
 ### Download the App
@@ -136,3 +140,4 @@ class MyNewOverlay {
 
 * Make this an Electron APP. This will simplify the setup process as we won't have to install Docker. We'll also be able to configure some of the overlay settings using the App instead of editing JSON or ENV files.
 * Add support for more event types such as "follows", "subscriptions", "bits", etc.
+* Add support for overlay configuration through the app.
