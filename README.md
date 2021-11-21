@@ -140,4 +140,7 @@ class MyNewOverlay {
 
 * Make this an Electron APP. This will simplify the setup process as we won't have to install Docker. We'll also be able to configure some of the overlay settings using the App instead of editing JSON or ENV files.
 * Add support for more event types such as "follows", "subscriptions", "bits", etc.
+* Trigger custom events using a virtual deck.
+* Allow events to be triggered using keyboard shortcuts.
 * Add support for overlay configuration through the app.
+* Add a common class full of helpers.
