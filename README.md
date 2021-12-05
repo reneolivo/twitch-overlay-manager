@@ -1,10 +1,13 @@
 # Twitch Overlay Manger
 
-## Overview
+<p align="center">
+  <img src="./public/assets/logo.jpg" alt="Twitch Overlay Manager" />
+</p>
 
-This app displays custom overlays when Twitch events are triggered.
-It can be useful to create your own overlay animations when viewers
-subscribe, follow, request a reward, etc.
+Display custom overlays when Twitch events are triggered.
+
+TOM can be useful to create your own overlay animations when viewers
+subscribe, follow, request a reward, send you bits, etc.
 
 
 https://user-images.githubusercontent.com/1642119/142749719-6340bd86-e9c1-49ac-be7f-5c3dbd1d68d5.mp4
@@ -106,23 +109,23 @@ class MyNewOverlay {
   }
 }
 ```
-  2.1. The contents of `data` are:
-  ```js
-  {
-    defaultImage: string, // The reward's image.
-    id: number, // The viewer reward's ID. Can be used to reject the reward... in theory.
-    message: string, // If the reward accepts a note from the viewer, it will be provided here.
-    redemptionDate: Date, // When was this requested. Probably micro seconds ago.
-    rewardCost: number, // How many channel points were spent when requesting the reward
-    rewardId: number, // The reward type ID.
-    rewardImage: Array, // The different image sizes for the reward.
-    rewardTitle: string, // The reward title. We use this to match it to an overlay.
-    status: string, // Whether the reward has been accepted or rejected.
-    userDisplayName: string, // The viewer's display name.
-    userId: number, // The viewer's ID.
-    userName: string, // The viewers machine name.
-  }
-  ```
+The contents of `data` are:
+```js
+{
+  defaultImage: string, // The reward's image.
+  id: number, // The viewer reward's ID. Can be used to reject the reward... in theory.
+  message: string, // If the reward accepts a note from the viewer, it will be provided here.
+  redemptionDate: Date, // When was this requested. Probably micro seconds ago.
+  rewardCost: number, // How many channel points were spent when requesting the reward
+  rewardId: number, // The reward type ID.
+  rewardImage: Array, // The different image sizes for the reward.
+  rewardTitle: string, // The reward title. We use this to match it to an overlay.
+  status: string, // Whether the reward has been accepted or rejected.
+  userDisplayName: string, // The viewer's display name.
+  userId: number, // The viewer's ID.
+  userName: string, // The viewers machine name.
+}
+```
 3. Create a new `overlay.json` file inside of the previously created folder. Add these details:
 ```json
 {
